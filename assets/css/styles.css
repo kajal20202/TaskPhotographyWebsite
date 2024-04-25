@@ -1,0 +1,223 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fullscreen-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fullscreen-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.options {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 2; /* Ensure navigation is above the image */
+}
+
+.options a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2; /* Ensure content is above navigation */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .options {
+    position: static;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.options a i {
+  margin-left: 5px; /* Add spacing between link text and icon */
+}
+.read-more-btn {
+  position: absolute;
+  bottom: 90px;
+  left: 90px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 2; /* Ensure button is above the image */
+}
+
+.read-more-btn:hover {
+  background-color: darkred;
+}
+.carousel-inner img {
+  height: 100%;
+  width: 70%;
+  padding: 50px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+}
+
+.text-overlay h2 {
+  font-size: 2.5rem;
+}
+
+.text-overlay p {
+  font-size: 1.2rem;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+.text-content {
+  padding: 0 30px; /* Add padding to the text content for spacing */
+}
+
+.text-content h2,
+.text-content p {
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+/* Homepage image size */
+.homepage-image {
+  width: 100%;
+  height: 100vh; /* Set height to match viewport height */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* Position the text overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust text color */
+}
+
+.text-overlay h2 {
+  font-size: 2.5rem; /* Adjust heading font size */
+}
+
+.text-overlay p {
+  font-size: 1.2rem; /* Adjust paragraph font size */
+  max-width: 80%; /* Limit width of text to prevent it from being too wide */
+  margin: 20px auto 0; /* Add margin for spacing */
+}
+.text-page {
+  height: 80vh; /* Set height to 100% of viewport height */
+  width: 100%; /* Set width to 100% of parent container */
+  background-image: url("your-background-image.jpg"); /* Replace 'your-background-image.jpg' with the path to your background image */
+  background-size: cover; /* Cover the entire container with the background image */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding-top: 50px; /* Adjust the top padding as needed */
+  padding-bottom: 50px; /* Adjust the bottom padding as needed */
+}
+
+.text-page-content {
+  text-align: center; /* Center text content */
+  color: black; /* Text color */
+  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
+.custom-btn {
+  background-color: black; /* Set background color to black */
+  margin-top: 90px;
+}
+/* Custom CSS to make the images square */
+.square-img {
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+.square-img {
+  max-height: 80%; /* Adjust the max-height as needed */
+  object-fit: cover;
+}
+.square-img {
+  width: 100%; /* Set the width to 100% to make the images responsive */
+  height: 200px; /* Adjust the value as needed to achieve the desired square size */
+  object-fit: cover; /* Ensure the image covers the entire container while maintaining its aspect ratio */
+}
+.carousel-item img {
+  width: 100%;
+  height: 100vh; /* Set the height of the carousel image to full viewport height */
+  object-fit: cover;
+}
+
+/* CSS for footer */
+footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 20px 0; /* Add padding to top and bottom */
+  text-align: center; /* Center-align text */
+}
